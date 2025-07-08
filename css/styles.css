@@ -1,0 +1,38 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+header{
+    padding-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#definicion{
+    display: flex;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.inicio{
+    background-color: aquamarine;
+}
+
+#definicion_titulo{
+    font-size: 35px;
+    padding: 20px 30px;
+}
+
+#parrafo_definicion{
+
+    padding: 5px 150px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#definicion_img{
+    text-align: center;
+}
+
+
