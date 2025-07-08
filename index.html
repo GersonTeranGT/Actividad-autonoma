@@ -36,7 +36,7 @@
         </section>
         <!--Características-->
         <section>
-            <h2>Caracteristícas pricnipales del DOM</h2>
+            <h2>Caracteristícas principales del DOM</h2>
             <h3>Propiedades del objeto <code>document</code></h3>
             <ul>
                 <li><code>document.body</code>: Devuelve el elemento <code>&lt;body&gt</code>.</li>
@@ -46,6 +46,34 @@
             </ul>
 
             <h3>Métodos comunes</h3>
+            <ul>
+                <li><code>getElementById(id)</code>: Selecciona un elemento por su ID.</li>
+                <li><code>getElementsByTagName(tag)</code>: Devuelve una colección de elementos por etiqueta.</li>
+                <li><code>getElementsByName(name)</code>: Devuelve elementos por su atributo <code>name</code>.</li>
+                <li><code>write()</code> y <code>writeln()</code>: Escriben contenido HTML directamente.</li>
+            </ul>
+
+            <h3>Navegación entre nodos</h3>
+            <ul>
+                <li><code>parentNode</code>: Nodo padre.</li>
+                <li><code>childNodes</code>: Lista de nodos hijos.</li>
+                <li><code>firstChild</code> y <code>lastChild</code>: Primer y último hijo.</li>
+                <li><code>previousSibling</code> y <code>nextSibling</code>: Hermanos anterior y siguiente.</li>
+            </ul>
+
+            <h3>Manipulación de contenido</h3>
+            <ul>
+                <li><code>innerHTML</code>: Cambia el contenido HTML de un elemento.</li>
+                <li><code>setAttribute()</code>: Cambia el valor del atributo del elemento HTML.
+                <p>Tambien se puede cambiar el atributo o el estilo de un elemento utilizando:</p></li>
+                <ul>
+                    <li><code>elemento.atributo = valor;</code></li>
+                    <li><code>elemento.style.propiedad = estilo;</code></li>
+                </ul>
+            </ul>
+
+            <h3>Manejo de eventos</h3>
+            <p>También se puede añadir manejadores de eventos mediante: <code>document.getElementById(id).evento = function()</code></p>
         </section>
     </main>
 </body>
