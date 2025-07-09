@@ -99,59 +99,65 @@
             <h2>Caracteristícas principales del DOM</h2>
             <div id="contenido_grid">
                 <div class="contenido">
-                <h3>Propiedades del objeto <code>document</code></h3>
-                <ul>
-                    <li><code><strong>document.body</strong></code>: Devuelve el elemento <code>&lt;body&gt</code>.</li>
-                    <li><code><strong>document.title</strong></code>: Devuelve o establece el título de la página.</li>
-                    <li><code><strong>document.imagenes</strong></code>: Devuelve una colección de todas las imágenes.</li>
-                    <li><code><strong>document.bgColor</strong></code>: Permite definir el color de fondo.</li>
-                </ul>
-            </div>
-            <div class="contenido">
-                <h3>Métodos comunes</h3>
-                <ul>
-                    <li><code><strong>getElementById(id)</strong></code>: Selecciona un elemento por su ID.</li>
-                    <li><code><strong>getElementsByTagName(tag)</strong></code>: Devuelve una colección de elementos por etiqueta.</li>
-                    <li><code><strong>getElementsByName(name)</strong></code>: Devuelve elementos por su atributo <code>name</code>.</li>
-                    <li><code><strong>write()</strong></code> y <code><strong>writeln()</strong></code>: Escriben contenido HTML directamente.</li>
-                </ul>
-            </div>
+                    <h3>Propiedades del objeto <code>document</code></h3>
+                    <ul>
+                        <li><code><strong>document.body</strong></code>: Devuelve el elemento <code>&lt;body&gt</code>.
+                        </li>
+                        <li><code><strong>document.title</strong></code>: Devuelve o establece el título de la página.
+                        </li>
+                        <li><code><strong>document.imagenes</strong></code>: Devuelve una colección de todas las
+                            imágenes.</li>
+                        <li><code><strong>document.bgColor</strong></code>: Permite definir el color de fondo.</li>
+                    </ul>
+                </div>
+                <div class="contenido">
+                    <h3>Métodos comunes</h3>
+                    <ul>
+                        <li><code><strong>getElementById(id)</strong></code>: Selecciona un elemento por su ID.</li>
+                        <li><code><strong>getElementsByTagName(tag)</strong></code>: Devuelve una colección de elementos
+                            por etiqueta.</li>
+                        <li><code><strong>getElementsByName(name)</strong></code>: Devuelve elementos por su atributo
+                            <code>name</code>.</li>
+                        <li><code><strong>write()</strong></code> y <code><strong>writeln()</strong></code>: Escriben
+                            contenido HTML directamente.</li>
+                    </ul>
+                </div>
 
-            <div class="contenido">
-                <h3>Navegación entre nodos</h3>
-                <ul>
-                    <li><code>parentNode</code>: Nodo padre.</li>
-                    <li><code>childNodes</code>: Lista de nodos hijos.</li>
-                    <li><code>firstChild</code> y <code>lastChild</code>: Primer y último hijo.</li>
-                    <li><code>previousSibling</code> y <code>nextSibling</code>: Hermanos anterior y siguiente.</li>
-                </ul>
-            </div>
+                <div class="contenido">
+                    <h3>Navegación entre nodos</h3>
+                    <ul>
+                        <li><code>parentNode</code>: Nodo padre.</li>
+                        <li><code>childNodes</code>: Lista de nodos hijos.</li>
+                        <li><code>firstChild</code> y <code>lastChild</code>: Primer y último hijo.</li>
+                        <li><code>previousSibling</code> y <code>nextSibling</code>: Hermanos anterior y siguiente.</li>
+                    </ul>
+                </div>
 
-            <div class="contenido">
-                <h3>Manipulación de contenido</h3>
-                <ul>
-                    <li><code>innerHTML</code>: Cambia el contenido HTML de un elemento.</li>
-                    <li><code>setAttribute()</code>: Cambia el valor del atributo del elemento HTML.</li>
-                </ul>
-                <p>Tambien se puede cambiar el atributo o el estilo de un elemento utilizando:</p>
-                <ul>
-                    <li><code>elemento.atributo = valor;</code></li>
-                    <li><code>elemento.style.propiedad = estilo;</code></li>
-                </ul>
-            </div>
+                <div class="contenido">
+                    <h3>Manipulación de contenido</h3>
+                    <ul>
+                        <li><code>innerHTML</code>: Cambia el contenido HTML de un elemento.</li>
+                        <li><code>setAttribute()</code>: Cambia el valor del atributo del elemento HTML.</li>
+                    </ul>
+                    <p>Tambien se puede cambiar el atributo o el estilo de un elemento utilizando:</p>
+                    <ul>
+                        <li><code>elemento.atributo = valor;</code></li>
+                        <li><code>elemento.style.propiedad = estilo;</code></li>
+                    </ul>
+                </div>
 
-            <div class="contenido">
-                <h3>Manejo de eventos</h3>
-                <p>También se puede añadir manejadores de eventos mediante:
+                <div class="contenido">
+                    <h3>Manejo de eventos</h3>
+                    <p>También se puede añadir manejadores de eventos mediante:
                     <pre><code>document.getElementById(id).evento = function()</code></pre>
-                </p>
+                    </p>
+                </div>
             </div>
-            </div>
-            
+
 
         </section>
         <!--Utilidad-->
-        <section>
+        <section id="utilidad">
             <h2>¿Para que sirve el DOM en desarrollo web?</h2>
             <p>El DOM es esencial para crear paginas web dinámicas e interactivas. Permite:</p>
             <ul>
@@ -164,7 +170,7 @@
                 personalizada para el usuario.</p>
         </section>
         <!--Referencias-->
-        <section>
+        <section id="referencias">
             <h2>Referencias</h2>
             <ul>
                 <li>Escarcena, M. (2020). <em>Programación páginas WEB: JavaScript y PHP</em> (1.ª ed.). RA-MA
@@ -175,12 +181,28 @@
             </ul>
         </section>
     </main>
-    <footer>
-        Quito, Ecuador
-        <address>
+
+
+    <footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href=""
+                    class="hover:underline">Gerson Teran™</a>. <small>&copy;Derechos Reservados 2025 Quito, Ecuador</small> <address>
             Autor: Gerson Teran
         </address>
-        <small>&copy;Derechos Reservados 2025</small>
+            </span>
+            
+
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <footer>
+        
+        
     </footer>
 </body>
 
