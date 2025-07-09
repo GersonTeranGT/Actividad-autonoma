@@ -1,7 +1,9 @@
-body{
+body {
     font-family: "Open Sans", sans-serif;
+    background-color: #dbfaf0;
 }
-header{
+
+header {
     padding-top: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -9,30 +11,85 @@ header{
     font-size: 40px;
 }
 
-#definicion{
+#definicion {
     display: flex;
     text-align: center;
+    justify-content: center;
     padding-bottom: 10px;
 }
 
-.inicio{
-    background-color: aquamarine;
+.inicio {
+    background-color: #9cb9ac;
 }
 
-#definicion_titulo{
+#definicion_titulo {
     font-size: 35px;
     padding: 20px 30px;
 }
 
-#parrafo_definicion{
+#parrafo_definicion {
 
     padding: 5px 150px;
     font-size: 20px;
     text-align: justify;
 }
 
-#definicion_img{
+#definicion_img {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#caracteristicas {
+    display: block;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#contenido_grid {
+    padding-top: 60px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.contenido {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    max-width: 100%;
+
+    background-color: #9cb7f0;
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+
+}
+
+#caracteristicas>h2 {
+    font-size: 30px;
     text-align: center;
 }
 
+.contenido>h3 {
+    font-size: 30px;
+    padding: 0;
+    margin: o;
+    text-align: center;
+}
 
+.contenido>ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.contenido>p{
+    text-align: justify;
+}
+
+pre, code {
+  white-space: pre-wrap;     /* Permite que el texto se divida en varias líneas */
+  word-break: break-word;    /* Rompe palabras largas si es necesario */
+  overflow-wrap: break-word; /* Alternativa para compatibilidad */
+}
