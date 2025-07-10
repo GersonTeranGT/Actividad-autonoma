@@ -21,14 +21,11 @@
     <nav
         class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a class="flex items-center space-x-3 rtl:space-x-reverse">
                 <i class="bi bi-question-square-fill"></i>
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tech</span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button type="button"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
-                    started</button>
                 <button data-collapse-toggle="navbar-sticky" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-sticky" aria-expanded="false">
@@ -44,46 +41,57 @@
                 <ul
                     class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="#"
+                        <a href="#definicion"
                             class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                            aria-current="page">Home</a>
+                            aria-current="page">Inicio</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        <a href="#caracteristicas"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Características</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                        <a href="#utilidad"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Importancia</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        <a href="#referencias"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Referencias</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <header id="titulo">
-        <h1>Modelo de Objetos de Documento (DOM)</h1>
+        <h1><strong>Modelo de Objetos de Documento (DOM)</strong></h1>
     </header>
     <main>
         <!--Definición-->
         <section id="definicion">
             <div class="inicio">
-                <h2 id="definicion_titulo">¿Qué es el DOM?</h2>
-                <p id="parrafo_definicion">
+                <h2 class="definicion_titulo">¿Qué es el DOM?</h2>
+                <p class="parrafo_definicion">
                     El DOM (Document Object Model) es una representación estructurada de un documento HTML o XML.
                     Permite a los lenguajes de programación, como JavaScript, acceder y modificar el contenido, la
                     estructura
                     y el estilo de una página web.
                     El DOM organiza los elementos como nodos en forma de árbol, donde cada etiqueta HTML es un nodo que
-                    puede tener padres, hijos y hermanos.
+                    puede tener padres, hijos y hermanos(Escarcena, 2021).
+                </p>
+                <h2 class="definicion_titulo">Estructura del DOM</h2>
+                <p class="parrafo_definicion">"La estructura del DOM se puede representar como un <strong>árbol
+                    </strong>en la que cada rama del árbol termina en un nodo,
+                    y cada nodo tiene objetos" (<cite>INESEM Business School, s.f.</cite>).</p>
+                <p class="parrafo_definicion">"Una propiedad importante de los modelos de estructura DOM es el isomorfismo estructural, es decir,
+                    si
+                    se utilizan dos implementaciones de DOM cualesquiera para crear una representación del mismo
+                    documento, crearán el mismo modelo de estructura, precisamente con los mismos objetos y relaciones"
+                    (<cite>INESEM Business School, s.f.</cite>).
                 </p>
                 <div id="definicion_img">
                     <figure>
                         <div class="flex justify-center p-3">
-                            <img src="imagenes/arbol-dom.png" alt="Estructura jerárquica del DOM">
+                            <img src="imagenes/arbol-dom.png" alt="Estructura jerárquica del DOM"
+                                class="w-full max-w-[900px] h-auto rounded-lg shadow-md">
                         </div>
 
                         <figcaption><small>Figura 1. Estrucutra jerárquica del DOM. Tomado de Escarcena, M. (2020).
@@ -95,9 +103,11 @@
 
         </section>
         <!--Características-->
+
         <section id="caracteristicas">
-            <h2>Caracteristícas principales del DOM</h2>
+
             <div id="contenido_grid">
+                <h2>Caracteristícas principales del DOM</h2>
                 <div class="contenido">
                     <h3>Propiedades del objeto <code>document</code></h3>
                     <ul>
@@ -111,13 +121,30 @@
                     </ul>
                 </div>
                 <div class="contenido">
+                    <h3>Otros objetos</h3>
+                    <ul>
+                        <li><code><strong>Window</strong></code>: El objeto window es un objeto del navegador que
+                            siempre está en la parte superior de la jerarquía. Es creado automáticamente por el
+                            navegador.
+                        </li>
+                        <li><code><strong>Document</strong></code>: El objeto document tiene varias propiedades que
+                            hacen referencia a otros objetos que permiten acceder y modificar el contenido de la página
+                            web.
+                        </li>
+                        <li><code><strong>Form</strong></code>: Está representado por etiquetas de formulario.</li>
+                        <li><code><strong>Link</strong></code>: Está representado por etiquetas de enlace.</li>
+                        <li><code><strong>Anchor</strong></code>: Está representado por etiquetas href.</li>
+                    </ul>
+                </div>
+                <div class="contenido">
                     <h3>Métodos comunes</h3>
                     <ul>
                         <li><code><strong>getElementById(id)</strong></code>: Selecciona un elemento por su ID.</li>
                         <li><code><strong>getElementsByTagName(tag)</strong></code>: Devuelve una colección de elementos
                             por etiqueta.</li>
                         <li><code><strong>getElementsByName(name)</strong></code>: Devuelve elementos por su atributo
-                            <code>name</code>.</li>
+                            <code>name</code>.
+                        </li>
                         <li><code><strong>write()</strong></code> y <code><strong>writeln()</strong></code>: Escriben
                             contenido HTML directamente.</li>
                     </ul>
@@ -126,34 +153,77 @@
                 <div class="contenido">
                     <h3>Navegación entre nodos</h3>
                     <ul>
-                        <li><code>parentNode</code>: Nodo padre.</li>
-                        <li><code>childNodes</code>: Lista de nodos hijos.</li>
-                        <li><code>firstChild</code> y <code>lastChild</code>: Primer y último hijo.</li>
-                        <li><code>previousSibling</code> y <code>nextSibling</code>: Hermanos anterior y siguiente.</li>
+                        <li><code><strong>parentNode</strong></code>: Nodo padre.</li>
+                        <li><code><strong>childNodes</strong></code>: Lista de nodos hijos.</li>
+                        <li><code><strong>firstChild</strong></code> y <code>lastChild</code>: Primer y último hijo.
+                        </li>
+                        <li><code><strong>previousSibling</strong></code> y <code><strong>nextSibling</strong></code>:
+                            Hermanos anterior y siguiente.</li>
                     </ul>
                 </div>
 
                 <div class="contenido">
                     <h3>Manipulación de contenido</h3>
                     <ul>
-                        <li><code>innerHTML</code>: Cambia el contenido HTML de un elemento.</li>
-                        <li><code>setAttribute()</code>: Cambia el valor del atributo del elemento HTML.</li>
+                        <li><code><strong>innerHTML</strong></code>: Cambia el contenido HTML de un elemento.</li>
+                        <li><code><strong>setAttribute()</strong></code>: Cambia el valor del atributo del elemento
+                            HTML.</li>
                     </ul>
                     <p>Tambien se puede cambiar el atributo o el estilo de un elemento utilizando:</p>
                     <ul>
-                        <li><code>elemento.atributo = valor;</code></li>
-                        <li><code>elemento.style.propiedad = estilo;</code></li>
+                        <li><code><strong>elemento.atributo</strong> = valor;</code></li>
+                        <li><code><strong>elemento.style.propiedad</strong> = estilo;</code></li>
                     </ul>
                 </div>
 
                 <div class="contenido">
                     <h3>Manejo de eventos</h3>
                     <p>También se puede añadir manejadores de eventos mediante:
-                    <pre><code>document.getElementById(id).evento = function()</code></pre>
+                    <pre><code><strong>document.getElementById(id).evento</strong> = function()</code></pre>
                     </p>
                 </div>
             </div>
+            <section id="info">
+                <h2>Otros datos</h2>
+                <div>
+                    <div
+                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 dato">
 
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">HTML</h5>
+                        <p class="font-normal text-gray-700 dark:text-gray-400">HTML se utiliza para estructurar las
+                            páginas web.</p>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 dato">
+
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">JavaScript</h5>
+                        <p class="font-normal text-gray-700 dark:text-gray-400">Javascript se utiliza para agregar
+                            comportamiento y dinamismo a las paginas web.</p>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 dato">
+
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">DOM</h5>
+                        <p class="font-normal text-gray-700 dark:text-gray-400">Javascript interpreta DOM fácilmente, es
+                            decir, no puede entender las etiquetas, por ejemplo, h1 en un documento HTML pero puede
+                            entender el objeto h1 en DOM y acceder utilizando diferentes funciones o métodos.</p>
+                    </div>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.inesem.es/revistadigital/informatica-y-tics/dom/"
+                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 dato">
+
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MÁS INFORMACIÓN
+                        </h5>
+                        <p class="font-normal text-gray-700 dark:text-gray-400">Para más información sobre el DOM, da
+                            click aqui.</p>
+                    </a>
+                </div>
+            </section>
 
         </section>
         <!--Utilidad-->
@@ -178,31 +248,43 @@
                     <a target="_blank"
                         href="https://elibro.net/es/ereader/itsqmet/222656?page=1">https://elibro.net/es/ereader/itsqmet/222656?page=1</a>
                 </li>
+                <li>INESEM Business School. (s.f.). <em>DOM: Qué es y cómo funciona el modelo de objetos
+                        deldocumento</em>. INESEM Revista Digital.
+                    <a href="https://www.inesem.es/revistadigital/informatica-y-tics/dom/"
+                        target="_blank">https://www.inesem.es/revistadigital/informatica-y-tics/dom/</a>
+                </li>
+
             </ul>
         </section>
     </main>
+
+    <section>
+
+        <form class="max-w-sm mx-auto">
+            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 text-black">Dejanos un
+                comentario</label>
+            <textarea id="message" rows="4"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Comenta aqui.."></textarea>
+            <button class="bg-blue-600 rounded-lg border p-2 m-2 boton">Enviar</button>
+        </form>
+
+    </section>
 
 
     <footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
         <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href=""
-                    class="hover:underline">Gerson Teran™</a>. <small>&copy;Derechos Reservados 2025 Quito, Ecuador</small> <address>
-            Autor: Gerson Teran
-        </address>
-            </span>
-            
+                    class="hover:underline">Autor: Gerson Teran</a>. <small>&copy;Derechos Reservados 2025 Quito,
+                    Ecuador</small>
 
+            </span>
             <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                    <a href="#definicion" class="hover:underline me-4 md:me-6">Inicio</a>
                 </li>
             </ul>
         </div>
-    </footer>
-
-    <footer>
-        
-        
     </footer>
 </body>
 

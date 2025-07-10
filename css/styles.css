@@ -1,53 +1,61 @@
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #dbfaf0;
+    background-color: #FAF7F3;
+    overflow-x: hidden;
 }
 
 header {
     padding-top: 50px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 40px;
+    color: #444cf7;
 }
 
 #definicion {
     display: flex;
     justify-content: center;
-    padding: 40px 20px;
-    background-color: #e0ede5;
-
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    
 }
 
 .inicio {
-    max-width: 1000px;
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
     width: 100%;
-    background-color: #9cb9ac;
+    max-width: 1100px;
+    margin: 20px auto 60px auto;
+    
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
     box-sizing: border-box;
+    flex: 1 1 auto;
 
 }
 
-#definicion_titulo {
-    font-size: 2.2rem;
-    color: #1a3f3d;
+.definicion_titulo {
+    font-size: 2rem;
+    color: #2b6cb0;
     margin-bottom: 20px;
-    border-bottom: 2px solid #cbd5e0;
+    border-bottom: 2px solid #7f7f81;
     padding-bottom: 10px;
     text-align: center;
 
 }
 
-#parrafo_definicion {
-
-    font-size: 1.1rem;
+.parrafo_definicion {
+    font-size: 1rem;
     line-height: 1.7;
     text-align: justify;
     margin-bottom: 30px;
     padding: 0 20px;
-
 }
 
 #definicion_img {
@@ -57,7 +65,8 @@ header {
 }
 
 #definicion_img img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 900px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
@@ -65,39 +74,40 @@ header {
 
 #definicion_img figcaption {
     margin-top: 10px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #333;
     padding: 0 10px;
 }
 
 
 #caracteristicas {
-    display: block;
-    margin-top: 40px;
+    display: flex;
+    margin-top: 20px;
     padding: 20px;
     text-align: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 #contenido_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5em;
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 40px;
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 ;
+    gap: 2rem;
+    padding: 20px;
 }
 
 .contenido {
-    background: linear-gradient(to bottom right, #cbdaf5, #e5edff);
-    border-radius: 12px;
+    background: linear-gradient(to bottom right, #b4eed6, #e5edff);
+    width: 80%;
+    border-radius: 10px;
     padding: 20px;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-
+    font-size: 1rem;
+    margin-left: 45px;
 }
 
 .contenido:hover {
@@ -106,13 +116,13 @@ header {
 }
 
 
-#caracteristicas>h2 {
+#caracteristicas h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #2b6cb0;
-    border-bottom: 2px solid #cbd5e0;
-    display: inline-block;
     padding-bottom: 5px;
+    text-align: left;
+    justify-content: center;
 }
 
 .contenido>h3 {
@@ -148,8 +158,13 @@ code {
     overflow-wrap: break-word;
 }
 
+.dato{
+    margin-bottom: 100px;
+}
+
 #utilidad {
-    max-width: 800px;
+    width: 100%;
+    max-width: 900px;
     margin: 40px auto;
     padding: 30px;
     background-color: #f5f7fa;
@@ -183,12 +198,25 @@ code {
 #utilidad>ul li {
     margin-bottom: 8px;
     list-style-type: circle;
+    list-style: disc inside;
 }
 
-#referencias{
+#referencias {
     max-width: 800px;
     margin: 40px auto 60px auto;
     padding: 30px 20px;
     background-color: #f9fafb;
     border-left: 60px solid #2b6cb0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#referencias>ul{
+    list-style: disc inside;
+    padding-left: 0;
+    margin-bottom: 12px;
+}
+
+.boton{
+    margin-top: 10px;
+    cursor: pointer;
 }
